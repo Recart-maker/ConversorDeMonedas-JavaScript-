@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neon Currency Converter</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="neon-title">🪙 NEON CURRENCY CONVERTER 💰</h1>
+        
+        <div class="converter-box">
+            <input type="number" id="amount" class="neon-input" placeholder="Amount" step="0.01">
+            
+            <div class="currency-selectors">
+                <select id="fromCurrency" class="neon-select"></select>
+                <span class="arrow">➔</span>
+                <select id="toCurrency" class="neon-select"></select>
+            </div>
+            
+            <button id="convertBtn" class="neon-button">CONVERT</button>
+            
+            <div id="result" class="neon-result"></div>
+            <div id="error" class="neon-error"></div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
